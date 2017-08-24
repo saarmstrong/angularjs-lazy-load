@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ModuleWithProviders }  from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import { FormComponent } from '../form/form.component';
+import { FormComponent }        from '../form/form.component';
 
 const routes: Routes = [
     {
@@ -10,12 +10,4 @@ const routes: Routes = [
     }
 ];
 
-@NgModule({
-  imports: [
-      RouterModule.forRoot(routes)
-  ],
-  exports: [
-      RouterModule
-  ]
-})
-export class RoutingModule { }
+export const Routing: ModuleWithProviders = RouterModule.forChild(routes);

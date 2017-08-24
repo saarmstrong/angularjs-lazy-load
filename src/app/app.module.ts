@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppRoutingModule }     from './app-routing/app-routing.module';
+import { AppRouting }           from './app-routing/app-routing.module';
 
 import { AppComponent }         from './app.component';
 import { HomeComponent }        from './home/home.component';
@@ -17,7 +17,7 @@ import { HomeComponent }        from './home/home.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
