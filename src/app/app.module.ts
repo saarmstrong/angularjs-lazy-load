@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { AppRoutingModule }     from './app-routing/app-routing.module';
+
+import { AppComponent }         from './app.component';
+import { HomeComponent }        from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
